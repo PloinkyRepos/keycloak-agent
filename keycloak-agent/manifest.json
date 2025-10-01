@@ -1,7 +1,7 @@
 {
     "container": "node:20-alpine",
-    "install": "cd /code && npm install --production",
-    "update": "cd /code && npm update",
+    "install": "npm install --production",
+    "update": "npm update",
     "cli": "/bin/sh",
     "agent": "/Agent/server/AgentServer.sh 'node /code/server.mjs'",
     "about": "Keycloak SSO authentication agent for CoralFlow - provides MCP authentication tools",
