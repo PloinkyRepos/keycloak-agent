@@ -1,0 +1,14 @@
+{
+  "container": "node:20-alpine",
+  "install": "cd /code && npm install --production",
+  "update": "cd /code && npm update",
+  "cli": "/bin/sh",
+  "agent": "/Agent/server/AgentServer.sh 'node /code/server.mjs'",
+  "about": "Keycloak SSO authentication agent for CoralFlow - provides MCP authentication tools",
+  "env": {
+    "KEYCLOAK_URL": "http://host.docker.internal:8080",
+    "KEYCLOAK_REALM": "coralflow",
+    "KEYCLOAK_CLIENT_ID": "coralflow-cli",
+    "PORT": "7000"
+  }
+}
